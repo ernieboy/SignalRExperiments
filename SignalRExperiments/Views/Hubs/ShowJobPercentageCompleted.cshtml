@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "ShowJobPercentageCompleted";
+}
+
+<h2>Server job status.</h2>
+
+<form>
+    <input type="submit" value="Start Job" id="btnStartJob" name="jobStart" />
+</form>
+
+<span id="jobStatusDisplay"></span>
+
+@section Scripts
+{
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/SignalR/hubs"></script>
+    <script src="~/Scripts/serverJobStatus.js"></script>
+}
+
